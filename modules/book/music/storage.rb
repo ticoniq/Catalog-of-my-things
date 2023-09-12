@@ -9,7 +9,7 @@ module Storage
     save_music_albums
     save_genres
   end
-  
+
   def save_genres
     json_data = @genres.map(&:to_hash)
     save_file('data/genres.json', json_data)
