@@ -1,17 +1,24 @@
 require_relative '../item'
-require 'date'
 
 class MusicAlbum < Item
-  attr_reader :id, :on_spotify
+  attr_reader :on_spotify, :publish_date
+  attr_accessor :genre
 
-  def initialize(publish_date, on_spotify)
-    super(nil, nil, nil, nil, publish_date)
-    @id = Random.rand(1..200)
+  def initialize(on_spotify:, publish_date:, id: nil)
+    super(publish_date, id)
     @on_spotify = on_spotify
-    @publish_date = Date.parse(publish_date)
   end
 
   def can_be_archived?
-    true if super && on_spotify == true
+    super() && @on_spotify
+  end
+
+  def to_hash
+    {
+      'id' => @id,
+      'publish_date' => @publish_date,
+      'on_spotify' => @on_spotify,
+      'genre' => @genre.name || ''
+    }
   end
 end
