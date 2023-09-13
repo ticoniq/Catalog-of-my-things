@@ -24,17 +24,14 @@ class Main
     puts 'Please choose one of the options: '
     puts '1. - List all books'
     puts '2. - List all music albums'
-    puts '3. - List all movies'
-    puts '4. - List all games'
-    puts "5. - List all genres (e.g 'Comedy', 'Thriller')"
-    puts "6. - List all labels (e.g. 'Gift', 'New')"
-    puts "7. - List all authors (e.g. 'Stephen King')"
-    puts "8. - List all sources (e.g. 'From a friend', 'Online shop')"
-    puts '9. - Add book'
-    puts '10. - Add a music album'
-    puts '11. - Add movie'
-    puts '12. - Add a game'
-    puts '13. - Exit'
+    puts '3. - List all games'
+    puts "4. - List all genres (e.g 'Comedy', 'Thriller')"
+    puts "5. - List all labels (e.g. 'Gift', 'New')"
+    puts "6. - List all authors (e.g. 'Stephen King')"
+    puts '7. - Add book'
+    puts '8. - Add a music album'
+    puts '9. - Add a game'
+    puts '10. - Exit'
   end
 
   def take_input
