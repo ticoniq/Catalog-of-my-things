@@ -37,9 +37,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Video Demo <a name="live-demo"></a>
 
-- Live Demo is not available yet
+[Video Demo of the project](https://drive.google.com/file/d/1FxafadxEdUAr-_AdFWsx8liFWFag8WLk/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
