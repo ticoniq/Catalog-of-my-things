@@ -28,6 +28,7 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 - **Ruby**
+- **Rspec testing**
 
 ### Key Features <a name="key-features"></a>
 
