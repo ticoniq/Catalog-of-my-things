@@ -4,8 +4,8 @@ class Genre
 
   def initialize(name:, id: nil)
     @id = id || rand(1..1000)
-    @items = []
     @name = name
+    @items = []
   end
 
   def add_item(item)

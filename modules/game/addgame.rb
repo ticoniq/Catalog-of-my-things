@@ -14,7 +14,7 @@ module AddGame
   end
 
   def input_date
-    puts 'Please Enter publish date in following format: yyyy/mm/dd'
+    puts 'Please Enter publish date in following format: dd/mm/yyyy'
     gets.chomp
   end
 
@@ -29,7 +29,7 @@ module AddGame
   end
 
   def input_last_played_at
-    puts 'Please Enter last played date in following format: yyyy/mm/dd'
+    puts 'Please Enter last played date in following format: dd/mm/yyyy'
     gets.chomp
   end
 
