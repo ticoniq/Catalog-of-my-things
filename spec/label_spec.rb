@@ -2,14 +2,14 @@ require_relative '../classes/book/label'
 require_relative '../classes/item'
 
 RSpec.describe Label do
-  let(:label_title) { 'Fiction' }
-  let(:label_color) { 'green' }
+  let(:label_title) { 'Comedy' }
+  let(:label_color) { 'Red' }
   let(:id) { 2 }
   let(:label) { Label.new(label_color, label_title, id) }
 
   # Test the initialization of the Book class
   describe '#initialize' do
-    it 'creates a book with the correct cover state  and publisher' do
+    it 'creates a book with the correct cover and publisher' do
       expect(label.title).to eq(label_title)
       expect(label.color).to eq(label_color)
       expect(label.id).to eq(id)
@@ -17,8 +17,8 @@ RSpec.describe Label do
   end
 
   describe '#add_item' do
-    let(:item) { Item.new('2023-08-07') }
-    it 'adds an item to the label' do
+    let(:item) { Item.new('2014-13-17') }
+    it 'adds item to the label' do
       label.add_item(item)
       expect(label.items).to include(item)
     end

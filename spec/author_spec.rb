@@ -3,15 +3,15 @@ require 'rspec'
 
 describe Author do
   context 'Testing the author class' do
-    author = Author.new('J. K. Rowling', 'Okyere')
+    author = Author.new('Munish', 'Halai')
     it 'Should create new author with those arguments' do
       expect(author).to be_an_instance_of(Author)
     end
     it 'Should return correct first name' do
-      expect(author.first_name).to eq 'J. K. Rowling'
+      expect(author.first_name).to eq 'Munish'
     end
     it 'Should return correct correct' do
-      expect(author.last_name).to eq 'Okyere'
+      expect(author.last_name).to eq 'Halai'
     end
     it 'Should return correct items' do
       expect(author.items).to eq []

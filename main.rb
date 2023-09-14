@@ -16,18 +16,18 @@ class Main
       else
         @app.run_more_than6(option)
       end
-      break if option == 13
+      break if option == 10
     end
   end
 
   def display_options
-    puts 'Please choose one of the options: '
+    puts 'Please any one opt: '
     puts '1. - List all books'
     puts '2. - List all music albums'
     puts '3. - List all games'
-    puts "4. - List all genres (e.g 'Comedy', 'Thriller')"
-    puts "5. - List all labels (e.g. 'Gift', 'New')"
-    puts "6. - List all authors (e.g. 'Stephen King')"
+    puts "4. - List all genres"
+    puts "5. - List all labels"
+    puts "6. - List all authors"
     puts '7. - Add book'
     puts '8. - Add a music album'
     puts '9. - Add a game'
@@ -37,8 +37,8 @@ class Main
   def take_input
     print 'Enter a number: '
     option = gets.chomp.to_i
-    while option.nil? || option < 1 || option > 13
-      puts 'Please enter a number between 1 and 4!'
+    while option.nil? || option < 1 || option > 10
+      puts 'Please enter a number!'
       print 'Enter a number: '
       option = gets.chomp.to_i
     end
